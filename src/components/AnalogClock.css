@@ -1,0 +1,125 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  
+.clock {
+  width: 10rem;
+  height: 10rem;
+  border: 10px solid white;
+  border-radius: 50%;
+  margin: 10px auto;
+  position: relative;
+  padding: 1rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+  background: url(https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   background-size: cover;
+   background-position-y: center;
+   border-radius: 50%;
+}
+
+.hand {
+  width: 40%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.sec_hand{
+  background: red;
+  height: 3px;
+  width: 40%;
+  left: 10%;
+}
+.min_hand,
+.hour_hand{
+  width: 35%;
+  left: 15%;
+  background-color: #ccc;
+}
+
+.clock span {
+  position: absolute;
+  font-weight: 700;
+  color: white;
+}
+
+.twelve {
+  top: 10px;
+  left: 46%;
+}
+
+.one {
+  top: 10%;
+  right: 26%;
+}
+
+.eleven {
+  top: 10%;
+  left: 26%;
+}
+
+.two {
+  top: 25%;
+  right: 10%;
+}
+
+.three {
+  right: 10px;
+  top: 46%;
+}
+
+.four {
+  right: 30px;
+  top: 67%;
+}
+
+.five {
+  right: 78px;
+  top: 80%;
+}
+
+.six {
+  bottom: 10px;
+  left: 50%;
+}
+
+.seven {
+  left: 80px;
+  top: 82%;
+}
+
+.eight {
+  left: 30px;
+  top: 67%;
+}
+
+.nine {
+  left: 10px;
+  top: 46%;
+}
+
+.ten {
+  top: 25%;
+  left: 10%;
+}
+@media (min-width: 768px){
+    .clock {
+        width: 15rem;
+        height: 15rem;
+    }
+}

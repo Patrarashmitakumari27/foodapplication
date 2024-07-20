@@ -1,0 +1,167 @@
+.create-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px 20px;
+}
+
+.create-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.create-para {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #000;
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 370px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    color: #000;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.input-group input {
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.password-input {
+    position: relative;
+    border:  1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-input input {
+    padding-right: 40px;
+    border: none;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-password svg {
+    width: 20px;
+    height: 20px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.terms input {
+    margin-right: 10px;
+}
+
+.terms input:checked + label a {
+    color: orange; 
+}
+
+.terms label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    color: #000;
+}
+
+.terms a {
+    color: #febc00;
+    text-decoration: none;
+}
+
+.register-button, .google-button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.register-button {
+    background-color: #febc00;
+    color: white;
+}
+
+.google-button {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.google-line {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.google-para {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    color: #000;
+    margin: 0;
+}
+
+
+
+.signin-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    align-self: center;
+    margin: 0;
+}
+
+.signin-span {
+    color: #febc00;
+    font-weight: 600;
+}
